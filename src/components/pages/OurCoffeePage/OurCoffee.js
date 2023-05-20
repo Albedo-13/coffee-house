@@ -42,12 +42,14 @@ const OurCoffee = (props) => {
     <>
       {/* мб есть решение в роутере, чтобы считывать текущую страницу из q-строки и менять содержимое хедера от него */}
       <Header currPage={'OurCoffee'} />
-      <AboutBeans />
-      <AppFilters
-        onSearchbarUpdate={onSearchbarUpdate}
-        onFilterSelect={onFilterSelect} />
-      <ProductsList
-        data={filteredData} />
+      <main>
+        <AboutBeans />
+        <AppFilters
+          onSearchbarUpdate={onSearchbarUpdate}
+          onFilterSelect={onFilterSelect} />
+        <ProductsList
+          data={filteredData} />
+      </main>
       <Footer />
     </>
   );

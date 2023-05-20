@@ -2,9 +2,9 @@ import './footer.scss';
 import whiteBeans from '../../assets/icons/beans-transparent-black.svg'
 import blackBeans from '../../assets/icons/beans-solid-black.svg'
 
-const Footer = () => {
+const Footer = (props) => {
   return (
-    <footer className="footer">
+    <footer className="footer" style={props.style}>
       <div className="container">
         <div className="footer-list">
           <div className="footer-list-item">

@@ -8,7 +8,7 @@ const ProductsListItem = (props) => {
     <a href="#" className="products-list-item">
       <div>
         <img className="products-list-item-img"
-          src={props.img}
+          src={itemProps.img}
           alt="product"
           draggable="false" />
         <div className="products-list-item-name">{itemProps.name}</div>

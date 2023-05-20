@@ -13,6 +13,12 @@ const App = () => {
     { id: 6, name: 'AROMISTICO Coffee 1 kg', country: 'Brazil', price: 6.95, img: require('../../assets/img/coffee-img.webp') },
   ]);
 
+  // TODO: react router
+  // TODO: generate product page by index (react router)
+  // TODO: third page
+  // TODO: Expand products fields
+  // TODO: make responsive design
+
   return (
     <div className="App">
       <MainPage data={data} />
