@@ -1,11 +1,11 @@
 import { Component } from 'react';
 
-import './App.scss';
-import Header from '../header/header';
-import About from '../about/about';
-import AppFilters from '../app-filters/app-filters';
-import ProductsList from '../products-list/products-list';
-import Footer from '../footer/footer';
+import './app.scss';
+import Header from '../header/Header';
+import About from '../about/About';
+import AppFilters from '../app-filters/AppFilters';
+import ProductsList from '../products-list/ProductsList';
+import Footer from '../footer/Footer';
 
 class App extends Component {
   constructor(props) {

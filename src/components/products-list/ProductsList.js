@@ -1,7 +1,7 @@
 import { Component } from 'react';
 
-import './products-list.scss';
-import ProductsListItem from '../products-list-item/products-list-item';
+import './productsList.scss';
+import ProductsListItem from '../products-list-item/ProductsListItem';
 
 class ProductsList extends Component {
 

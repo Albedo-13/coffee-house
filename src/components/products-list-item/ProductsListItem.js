@@ -1,6 +1,6 @@
 import { Component } from 'react';
 
-import './products-list-item.scss';
+import './productsListItem.scss';
 
 class ProductsListItem extends Component {
   render() {
