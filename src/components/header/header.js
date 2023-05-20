@@ -2,9 +2,9 @@ import { useState } from 'react';
 import HeaderLinks from '../headerLinks/HeaderLinks';
 import './header.scss';
 
-import MainPageBackground from "../../assets/img/main-bg.png";
-import OurCoffeePageBackground from "../../assets/img/our-coffee-bg.webp";
-import whiteBeans from '../../assets/icons/beans-solid-white.png'
+import MainPageBackground from '../../assets/img/main-bg.webp';
+import OurCoffeePageBackground from '../../assets/img/our-coffee-bg.webp';
+import whiteBeans from '../../assets/icons/beans-solid-white.svg'
 
 const Header = (props) => {
   const [pageName] = useState(props.currPage);
