@@ -1,7 +1,8 @@
+@import '../../styles/variables.scss';
+
 .header {
   min-height: 146px;
   padding: 30px 0 62px 0;
-  background: no-repeat center center / cover url('../../../public/assets/img/header-bg.webp');
 
   &-beans {
     width: 35px;
@@ -10,32 +11,76 @@
 
   &-title {
     margin: 0;
-    color: #fff;
+    color: $white;
     text-align: center;
     font-size: 40px;
 
     margin-top: 60px;
   }
-}
 
-.menu-list {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-around;
-  width: 375px;
+  &-separator {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-top: 4px;
 
-  &-item {
 
-    a {
-      color: #fff;
-      font-size: 12px;
-      text-decoration: underline rgba(255, 255, 255, 0);
-      transition: text-decoration-color 0.3s;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 60px;
+      height: 1px;
+      background-color: $white;
 
-      &:hover {
-        text-decoration-color: rgba(255, 255, 255, 1);
-      }
+      position: relative;
+      top: -21px;
+      right: 18px;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 60px;
+      height: 1px;
+      background-color: $white;
+
+      position: relative;
+      bottom: 21px;
+      right: -18px;
+    }
+  }
+
+  &-subtitle {
+    text-align: center;
+    color: $white;
+    margin-top: 23px;
+    margin-bottom: 0;
+
+    &:not(:first-of-type) {
+      margin-top: 13px;
+    }
+  }
+
+  &-btn {
+    font-family: 'Merienda', cursive;
+    display: block;
+    width: 120px;
+    height: 30px;
+    margin: 0 auto;
+
+    color: $white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: 1px solid $white;
+    border-radius: 3px;
+    background-color: transparent;
+    transition: 0.35s all;
+    margin-top: 19px;
+
+    &:hover {
+      cursor: pointer;
+      color: $coffee;
+      border-color: $coffee;
+      transition: 0.35s all;
     }
   }
 }
-

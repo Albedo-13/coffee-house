@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import '../../app/app.scss';
 import Header from '../../header/Header';
-import About from '../../about/About';
+import AboutBeans from '../../aboutBeans/AboutBeans';
 import AppFilters from '../../appFilters/AppFilters';
 import ProductsList from '../../productsList/ProductsList';
 import Footer from '../../footer/Footer';
@@ -40,8 +40,9 @@ const OurCoffee = (props) => {
 
   return (
     <>
-      <Header />
-      <About />
+      {/* мб есть решение в роутере, чтобы считывать текущую страницу из q-строки и менять содержимое хедера от него */}
+      <Header currPage={'OurCoffee'} />
+      <AboutBeans />
       <AppFilters
         onSearchbarUpdate={onSearchbarUpdate}
         onFilterSelect={onFilterSelect} />

@@ -1,10 +1,14 @@
 
 
+import Header from '../../header/Header';
+import AboutUs from '../../aboutUs/AboutUs';
+
 const MainPage = () => {
 
   return (
     <div>
-      adada
+      <Header currPage={'MainPage'} />
+      <AboutUs />
     </div>
   );
 }

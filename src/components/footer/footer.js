@@ -1,4 +1,6 @@
 import './footer.scss';
+import whiteBeans from '../../assets/icons/beans-transparent-black.svg'
+import blackBeans from '../../assets/icons/beans-solid-black.svg'
 
 const Footer = () => {
   return (
@@ -7,7 +9,7 @@ const Footer = () => {
         <div className="footer-list">
           <div className="footer-list-item">
             <img className="footer-beans"
-              src="./assets/icons/beans-transparent-black.svg"
+              src={whiteBeans}
               alt="coffee beans icon"
               draggable="false" />
             <a href="#">Coffee house</a>
@@ -22,7 +24,7 @@ const Footer = () => {
 
         <div className="footer-separator">
           <img className="footer-separator-img"
-            src="./assets/icons/beans-solid-black.svg"
+            src={blackBeans}
             alt="coffee beans icon"
             draggable="false" />
         </div>

@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .app-filters {
   min-height: 30px;
   padding: 25px 0 60px 0;
@@ -10,7 +12,7 @@
   &-searchbar {
     width: 144px;
     height: 30px;
-    background: #FFFFFF;
+    background: $white;
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
     border: none;
     border-radius: 4px;
@@ -23,8 +25,8 @@
     }
 
     &:focus {
-      outline: 2px solid #E1B995;
-      box-shadow: 5px 5px 35px rgba($color: #E1B995, $alpha: 0.35);
+      outline: 2px solid $coffee;
+      box-shadow: 5px 5px 35px rgba($color: $coffee, $alpha: 0.35);
       transition: 0.35s all;
     }
 
@@ -43,7 +45,7 @@
     button {
       width: 75px;
       height: 30px;
-      background: #FFFFFF;
+      background: $white;
       box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
       border: none;
       font-family: 'Merienda', cursive;
@@ -68,6 +70,6 @@
 
 .btn-active {
   transition: 0.25s all;
-  outline: 2px solid #E1B995;
-  color: #E1B995;
+  outline: 2px solid $coffee;
+  color: $coffee;
 }

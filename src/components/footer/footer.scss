@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .footer {
   min-height: 102px;
   padding-bottom: 13px;
@@ -11,7 +13,7 @@
 
   &-title {
     margin: 0;
-    color: #000;
+    color: $black;
     text-align: center;
     font-size: 40px;
     margin-top: 60px;
@@ -26,7 +28,7 @@
       display: block;
       width: 60px;
       height: 1px;
-      background-color: #000;
+      background-color: $black;
 
       position: relative;
       top: 15px;
@@ -38,7 +40,7 @@
       display: block;
       width: 60px;
       height: 1px;
-      background-color: #000;
+      background-color: $black;
 
       position: relative;
       bottom: 21px;
@@ -56,7 +58,7 @@
     &-item {
   
       a {
-        color: #000;
+        color: $black;
         font-size: 12px;
         text-decoration: underline rgba(0, 0, 0, 0);
         transition: text-decoration-color 0.3s;
