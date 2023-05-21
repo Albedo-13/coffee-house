@@ -1,0 +1,76 @@
+@import '../../styles/variables.scss';
+
+.single-coffee {
+  min-height: 355px;
+  padding: 70px 0 30px 0;
+
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-img {
+    min-width: 355px;
+    height: auto;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  &-info {
+    margin-left: 30px;
+  }
+
+  &-title {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &-separator {
+    display: block;
+    margin-bottom: 21px;
+    text-align: center;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 60px;
+      height: 1px;
+      background-color: $black;
+
+      position: relative;
+      top: -14px;
+      left: -25px;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 60px;
+      height: 1px;
+      background-color: $black;
+
+      position: relative;
+      bottom: 14px;
+      right: -25px;
+    }
+  }
+
+  &-country,
+  &-description,
+  &-price {
+    font-size: 14px;
+    max-width: 350px;
+    line-height: 20px;
+    margin: 0px 0px 16px 0px;
+
+    span {
+      font-weight: 700;
+      font-size: 14px;
+    }
+  }
+
+  &-price {
+    font-size: 25px;
+  }
+}

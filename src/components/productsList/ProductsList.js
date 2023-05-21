@@ -6,9 +6,8 @@ const ProductsList = (props) => {
     const data = props.data;
 
     return data.map((item) => {
-      const {id, ...itemProps} = item;
       return (
-        <ProductsListItem key={id} {...itemProps} />
+        <ProductsListItem key={item.id} {...item} />
       );
     });
   }

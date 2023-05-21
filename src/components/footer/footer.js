@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import './footer.scss';
 import whiteBeans from '../../assets/icons/beans-transparent-black.svg'
 import blackBeans from '../../assets/icons/beans-solid-black.svg'
@@ -12,13 +14,13 @@ const Footer = (props) => {
               src={whiteBeans}
               alt="coffee beans icon"
               draggable="false" />
-            <a href="#">Coffee house</a>
+            <Link to='/'>Coffee house</Link>
           </div>
           <div className="footer-list-item">
-            <a href="#">Our coffee</a>
+            <Link to='/OurCoffee'>Our coffee</Link>
           </div>
           <div className="footer-list-item">
-            <a href="#">For your pleasure</a>
+            <Link to='/'>For your pleasure</Link>
           </div>
         </div>
 

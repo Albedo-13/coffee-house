@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import HeaderLinks from '../headerLinks/HeaderLinks';
 import './header.scss';
 
@@ -47,7 +48,9 @@ const createMainPageView = () => {
       </div>
       <h3 className="header-subtitle">We makes every day full of energy and taste</h3>
       <h3 className="header-subtitle">Want to try our beans?</h3>
-      <button className="header-btn">More</button>
+      <Link to='/OurCoffee' className="header-btn-link">
+        <button className="header-btn">More</button>
+      </Link>
     </>
   );
 }

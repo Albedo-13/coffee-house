@@ -40,7 +40,6 @@ const OurCoffee = (props) => {
 
   return (
     <>
-      {/* мб есть решение в роутере, чтобы считывать текущую страницу из q-строки и менять содержимое хедера от него */}
       <Header currPage={'OurCoffee'} />
       <main>
         <AboutBeans />

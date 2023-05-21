@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import './headerLinks.scss';
 import whiteBeans from '../../assets/icons/beans-transparent-white.svg'
 
@@ -9,13 +11,13 @@ const HeaderLinks = () => {
           src={whiteBeans}
           alt="coffee beans icon"
           draggable="false" />
-        <a href="#">Coffee house</a>
+        <Link to='/'>Coffee house</Link>
       </li>
       <li className="menu-list-item">
-        <a href="#">Our coffee</a>
+        <Link to='/OurCoffee'>Our coffee</Link>
       </li>
       <li className="menu-list-item">
-        <a href="#">For your pleasure</a>
+        <Link to='/'>For your pleasure</Link>
       </li>
     </ul>
   );
