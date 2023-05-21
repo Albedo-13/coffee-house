@@ -15,7 +15,6 @@ const App = () => {
   // TODO: make responsive design
   // TODO: 404
   // TODO: js => jsx
-  // TODO: lazy на загрузку продуктов
 
   return (
     <Router>
