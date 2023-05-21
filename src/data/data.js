@@ -5,7 +5,6 @@ const data = [{
     description: 'Experience premium taste in every coffee cup of the Roma Italian Medium Roast Coffee Blend by Aromistico. Crafted with excellent-quality beans and careful processes, our coffee blend is a gourmet treat you can easily enjoy at home. Sharp, mild, and earthy, this coffee envelops your taste buds with full-bodied richness in every sip. Enjoy it as iced coffee or serve it hot. Our specialty coffee is a great pair to your favorite morning and midday pick-me-up me. Whether you prep it through french press, pour over, moka pot, filter, drip, or aeropress brewing methods, it will retain its signature gourmet Italian brew flavor. Roma has a perfectly balanced flavor owing to the unique combination of premium Robusta and Arabica coffee beans. Every bag of our whole bean coffee medium roast blend uses beans from the Green Mountains of El Salvador and Guatemala.',
     price: 6.99,
     thumbnail: require('../assets/img/coffee-img-3.webp'),
-    // img: require('../assets/img/coffee-img-3.svg'),
   },
   {
     id: 2,
@@ -14,7 +13,6 @@ const data = [{
     description: 'Best coffee in the world!',
     price: 7.02,
     thumbnail: require('../assets/img/coffee-img.webp'),
-    // img: require('../assets/img/coffee-img.svg'),
   },
   {
     id: 3,
@@ -23,7 +21,6 @@ const data = [{
     description: 'Best coffee in the world!',
     price: 7.21,
     thumbnail: require('../assets/img/coffee-img-2.webp'),
-    // img: require('../assets/img/coffee-img-2.svg'),
   },
   {
     id: 4,
@@ -32,7 +29,6 @@ const data = [{
     description: 'Best coffee in the world!',
     price: 6.14,
     thumbnail: require('../assets/img/coffee-img-3.webp'),
-    // img: require('../assets/img/coffee-img-3.svg'),
   },
   {
     id: 5,
@@ -41,7 +37,6 @@ const data = [{
     description: 'Best coffee in the world!',
     price: 10.99,
     thumbnail: require('../assets/img/coffee-img-2.webp'),
-    // img: require('../assets/img/coffee-img-2.svg'),
   },
   {
     id: 6,
@@ -50,7 +45,6 @@ const data = [{
     description: 'Best coffee in the world!',
     price: 6.95,
     thumbnail: require('../assets/img/coffee-img.webp'),
-    // img: require('../assets/img/coffee-img.svg'),
   },
 ];
 

@@ -7,13 +7,14 @@ import Spinner from '../spinner/Spinner';
 const MainPage = lazy(() => import('../pages/MainPage/MainPage'));
 const OurCoffeePage = lazy(() => import('../pages/OurCoffeePage/OurCoffeePage'));
 const SingleCoffeePage = lazy(() => import('../pages/SingleCoffeePage/SingleCoffeePage'));
+const NotFoundPage = lazy(() => import('../pages/NotFoundPage/NotFoundPage'));
 
 const App = () => {
   const [data] = useState(coffeesList);
 
   // TODO: third page
   // TODO: make responsive design
-  // TODO: 404
+  // TODO: finish 404
   // TODO: js => jsx
 
   return (
@@ -24,6 +25,7 @@ const App = () => {
             <Route path='/' element={<MainPage data={data} />} />
             <Route path='/OurCoffee' element={<OurCoffeePage data={data} />} />
             <Route path='/OurCoffee/:coffeeId' element={<SingleCoffeePage data={data} />} />
+            <Route path='*' element={<NotFoundPage />} />
           </Routes>
         </Suspense>
       </div>
