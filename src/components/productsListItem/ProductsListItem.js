@@ -3,18 +3,18 @@ import { Link } from 'react-router-dom';
 import './productsListItem.scss';
 
 const ProductsListItem = (props) => {
-  const itemProps = props;
+  const { id, thumbnail, name, country, price } = props;
   
   return (
-    <Link to={`${itemProps.id}`} className="products-list-item">
+    <Link to={`${id}`} className="products-list-item">
       <div>
         <img className="products-list-item-img"
-          src={itemProps.thumbnail}
+          src={thumbnail}
           alt="product"
           draggable="false" />
-        <div className="products-list-item-name">{itemProps.name}</div>
-        <div className="products-list-item-country">{itemProps.country}</div>
-        <div className="products-list-item-price">{itemProps.price}$</div>
+        <div className="products-list-item-name">{name}</div>
+        <div className="products-list-item-country">{country}</div>
+        <div className="products-list-item-price">{price}$</div>
       </div>
     </Link>
   );

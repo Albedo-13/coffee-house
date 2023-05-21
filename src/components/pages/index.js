@@ -1,9 +1,9 @@
 import MainPage from "./MainPage/MainPage";
-import OurCoffee from "./OurCoffeePage/OurCoffee";
-import SingleCoffeePage from "./singleCoffeePage/SingleCoffeePage";
+import OurCoffeePage from "./OurCoffeePage/OurCoffeePage";
+import SingleCoffeePage from "./SingleCoffeePage/SingleCoffeePage";
 
 export {
   MainPage,
-  OurCoffee,
+  OurCoffeePage,
   SingleCoffeePage,
 };

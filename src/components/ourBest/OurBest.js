@@ -5,7 +5,7 @@ import './ourBest.scss';
 const OurBest = (props) => {
   const { data } = props;
 
-  const content = data.slice(3).map(item => {
+  const content = data.slice(-3).map(item => {
     return (
       <Link to={`/OurCoffee/${item.id}`} className="our-best-item" key={item.id}>
         <div>

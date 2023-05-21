@@ -7,7 +7,7 @@ import AppFilters from '../../appFilters/AppFilters';
 import ProductsList from '../../productsList/ProductsList';
 import Footer from '../../footer/Footer';
 
-const OurCoffee = (props) => {
+const OurCoffeePage = (props) => {
   const [data] = useState(props.data);
   const [term, setTerm] = useState('');
   const [filter, setFilter] = useState('all');
@@ -54,4 +54,4 @@ const OurCoffee = (props) => {
   );
 }
 
-export default OurCoffee;
+export default OurCoffeePage;

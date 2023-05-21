@@ -48,9 +48,7 @@ const createMainPageView = () => {
       </div>
       <h3 className="header-subtitle">We makes every day full of energy and taste</h3>
       <h3 className="header-subtitle">Want to try our beans?</h3>
-      <Link to='/OurCoffee' className="header-btn-link">
-        <button className="header-btn">More</button>
-      </Link>
+      <Link to='/OurCoffee' className="header-btn" aria-label='more products'>Our Coffees</Link>
     </>
   );
 }

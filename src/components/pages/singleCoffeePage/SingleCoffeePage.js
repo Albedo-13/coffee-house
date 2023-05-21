@@ -14,7 +14,7 @@ const SingleCoffeePage = (props) => {
     <>
       <Header />
       <SingleCoffee product={product} />
-      <Footer style={{backgroundColor: 'antiquewhite', paddingTop: '30px'}} />
+      <Footer style={{ paddingTop: '30px' }} />
     </>
   );
 }

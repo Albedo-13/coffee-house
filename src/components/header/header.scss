@@ -68,24 +68,25 @@
     width: 120px;
     height: 30px;
     margin: 0 auto;
+    margin-top: 19px;
+    padding: 3px 7px;
 
     color: $white;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border: 1px solid $white;
     border-radius: 3px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background-color: transparent;
+
     transition: 0.35s all;
-    margin-top: 19px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.7;
 
     &:hover {
       cursor: pointer;
       color: $coffee;
       border-color: $coffee;
       transition: 0.35s all;
-    }
-
-    &-link {
-      text-decoration: none;
     }
   }
 }

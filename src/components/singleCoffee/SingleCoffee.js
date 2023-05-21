@@ -2,21 +2,14 @@ import './singleCoffee.scss'
 import blackBeans from '../../assets/icons/beans-solid-black.svg';
 
 const SingleCoffee = (props) => {
-  const { name, country, description, price, img, thumbnail } = props.product;
-  
-  let imageToShow;
-  try {
-    imageToShow = img.default;
-  } catch {
-    imageToShow = thumbnail;
-  }
+  const { name, country, description, price, thumbnail } = props.product;
 
   return (
     <section className="single-coffee">
       <div className="container">
         <div className="single-coffee-wrapper">
           <img className="single-coffee-img"
-            src={imageToShow}
+            src={thumbnail}
             alt="product"
             draggable="false" />
           <div className="single-coffee-info">
