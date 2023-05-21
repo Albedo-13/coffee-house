@@ -2,8 +2,8 @@ import { Suspense, lazy, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './app.scss';
-// import { MainPage, OurCoffee } from '../pages';
 import coffeesList from '../../data/data';
+import Spinner from '../spinner/Spinner';
 const MainPage = lazy(() => import('../pages/MainPage/MainPage'));
 const OurCoffeePage = lazy(() => import('../pages/OurCoffeePage/OurCoffeePage'));
 const SingleCoffeePage = lazy(() => import('../pages/SingleCoffeePage/SingleCoffeePage'));
@@ -20,7 +20,7 @@ const App = () => {
   return (
     <Router>
       <div className="App">
-        <Suspense fallback={<>Loading...</>}>
+        <Suspense fallback={<Spinner />}>
           <Routes>
             <Route path='/' element={<MainPage data={data} />} />
             <Route path='/OurCoffee' element={<OurCoffeePage data={data} />} />
