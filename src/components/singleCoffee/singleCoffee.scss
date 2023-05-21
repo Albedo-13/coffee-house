@@ -11,8 +11,10 @@
 
   &-img {
     min-width: 355px;
-    height: auto;
+    height: 100%;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-self: center;
   }
 
   &-info {
