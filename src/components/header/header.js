@@ -11,14 +11,12 @@ import whiteBeans from '../../assets/icons/beans-solid-white.svg'
 const Header = (props) => {
   const [pageName] = useState(props.currPage);
 
-  console.log(pageName); // -
-
   const [headerStyles, headerContent] = (function () {
     switch (pageName) {
       case 'MainPage':
         return [{
           backgroundImage: `url(${MainPageBackground})`,
-          backgroundPosition: 'center center',
+          backgroundPosition: 'center top',
           backgroundSize: '101%', // to avoid white stripe bug
           backgroundRepeat: 'no-repeat',
           paddingBottom: '200px',
@@ -29,14 +27,14 @@ const Header = (props) => {
           backgroundImage: `url(${OurCoffeePageBackground})`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat'
+          backgroundRepeat: 'no-repeat',
         }, createOurCoffeePageView()];
       case 'ForPleasurePage':
         return [{
           backgroundImage: `url(${ForPleasurePageBackground})`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat'
+          backgroundRepeat: 'no-repeat',
         }, createForPleasurePageView()];
       default:
         return;

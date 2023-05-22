@@ -42,7 +42,7 @@ const OurCoffeePage = (props) => {
     <>
       <Header currPage={'OurCoffeePage'} />
       <main>
-        <AboutBeans />
+        <AboutBeans currPage={'OurCoffeePage'} />
         <AppFilters
           onSearchbarUpdate={onSearchbarUpdate}
           onFilterSelect={onFilterSelect} />

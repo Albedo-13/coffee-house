@@ -1,18 +1,40 @@
+import { useState } from 'react';
 import './aboutBeans.scss';
+
 import womanDrinkCoffee from '../../assets/img/about-img.webp'
+import HotCoffee from '../../assets/img/hot-coffee.webp';
 import blackBeans from '../../assets/icons/beans-solid-black.svg'
 
-const AboutBeans = () => {
+const AboutBeans = (props) => {
+  const [pageName] = useState(props.currPage);
+
+  const [aboutBeansImg, aboutBeansTitle] = (function () {
+    switch (pageName) {
+      case 'OurCoffeePage':
+        return [
+          womanDrinkCoffee,
+          'About our beans',
+        ];
+      case 'ForPleasurePage':
+        return [
+          HotCoffee,
+          'About our goods',
+        ];
+      default:
+        return;
+    }
+  })();
+
     return (
     <section className="about-beans">
       <div className="container">
         <div className="about-beans-wrapper">
           <img className="about-beans-img"
-            src={womanDrinkCoffee}
+            src={aboutBeansImg}
             alt="woman drinking coffee"
             draggable="false" />
           <div className="about-beans-info">
-            <h2 className="about-beans-title">About our beans</h2>
+            <h2 className="about-beans-title">{aboutBeansTitle}</h2>
             <div className="about-beans-separator">
               <img className="about-beans-separator-img"
                 src={blackBeans}

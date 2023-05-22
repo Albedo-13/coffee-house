@@ -18,6 +18,7 @@ const App = () => {
   // TODO: finish 404
   // TODO: js => jsx
   // TODO: dynamic header images imports
+  // TODO: dynamic aboutBeans images imports
 
   return (
     <Router>

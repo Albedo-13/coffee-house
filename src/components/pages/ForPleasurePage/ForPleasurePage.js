@@ -7,7 +7,7 @@ const ForPleasurePage = (props) => {
   return (
     <>
       <Header currPage={'ForPleasurePage'} />
-      <AboutBeans />
+      <AboutBeans currPage={'ForPleasurePage'} />
       <ProductsList data={props.data} />
       <Footer />
     </>
