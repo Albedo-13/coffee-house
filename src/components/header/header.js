@@ -13,46 +13,31 @@ const Header = (props) => {
 
   console.log(pageName); // -
 
-  const headerStyles = (function () {
+  const [headerStyles, headerContent] = (function () {
     switch (pageName) {
       case 'MainPage':
-        return {
+        return [{
           backgroundImage: `url(${MainPageBackground})`,
           backgroundPosition: 'center center',
           backgroundSize: '101%', // to avoid white stripe bug
           backgroundRepeat: 'no-repeat',
           paddingBottom: '200px',
-        }
+        }, createMainPageView()];
       case 'OurCoffeePage':
       case 'SingleCoffeePage':
-        return {
+        return [{
           backgroundImage: `url(${OurCoffeePageBackground})`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat'
-        }
+        }, createOurCoffeePageView()];
       case 'ForPleasurePage':
-        return {
+        return [{
           backgroundImage: `url(${ForPleasurePageBackground})`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat'
-        }
-      default:
-        return;
-    }
-  })();
-
-  // const headerContent = pageName === 'MainPage' ? createMainPageView() : createOurCoffeePageView();
-  const headerContent = (function () {
-    switch (pageName) {
-      case 'MainPage':
-        return createMainPageView();
-      case 'OurCoffeePage':
-      case 'SingleCoffeePage':
-        return createOurCoffeePageView();
-      case 'ForPleasurePage':
-        return createForPleasurePageView();
+        }, createForPleasurePageView()];
       default:
         return;
     }
