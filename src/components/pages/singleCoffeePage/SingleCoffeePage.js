@@ -18,7 +18,7 @@ const SingleCoffeePage = (props) => {
 
   return (
     <>
-      <Header />
+      <Header currPage={'SingleCoffeePage'} />
       <SingleCoffee product={product} />
       <Footer style={{ paddingTop: '30px' }} />
     </>

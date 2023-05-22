@@ -40,7 +40,7 @@ const OurCoffeePage = (props) => {
 
   return (
     <>
-      <Header currPage={'OurCoffee'} />
+      <Header currPage={'OurCoffeePage'} />
       <main>
         <AboutBeans />
         <AppFilters

@@ -20,7 +20,7 @@ const Footer = (props) => {
             <Link to='/OurCoffee'>Our coffee</Link>
           </div>
           <div className="footer-list-item">
-            <Link to='/'>For your pleasure</Link>
+            <Link to='/ForPleasure'>For your pleasure</Link>
           </div>
         </div>
 

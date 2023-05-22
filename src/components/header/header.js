@@ -5,24 +5,58 @@ import './header.scss';
 
 import MainPageBackground from '../../assets/img/main-bg.webp';
 import OurCoffeePageBackground from '../../assets/img/our-coffee-bg.webp';
+import ForPleasurePageBackground from '../../assets/img/for-pleasure-bg.webp';
 import whiteBeans from '../../assets/icons/beans-solid-white.svg'
 
 const Header = (props) => {
   const [pageName] = useState(props.currPage);
 
-  const headerStyles = pageName === 'MainPage' ? {
-    backgroundImage: `url(${MainPageBackground})`,
-    backgroundPosition: 'center center',
-    backgroundSize: '101%', // to avoid white stripe bug
-    backgroundRepeat: 'no-repeat',
-    paddingBottom: '200px',
-  } : {
-    backgroundImage: `url(${OurCoffeePageBackground})`,
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'
-  };
-  const headerContent = pageName === 'MainPage' ? createMainPageView() : createOurCoffeePageView();
+  console.log(pageName); // -
+
+  const headerStyles = (function () {
+    switch (pageName) {
+      case 'MainPage':
+        return {
+          backgroundImage: `url(${MainPageBackground})`,
+          backgroundPosition: 'center center',
+          backgroundSize: '101%', // to avoid white stripe bug
+          backgroundRepeat: 'no-repeat',
+          paddingBottom: '200px',
+        }
+      case 'OurCoffeePage':
+      case 'SingleCoffeePage':
+        return {
+          backgroundImage: `url(${OurCoffeePageBackground})`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
+        }
+      case 'ForPleasurePage':
+        return {
+          backgroundImage: `url(${ForPleasurePageBackground})`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
+        }
+      default:
+        return;
+    }
+  })();
+
+  // const headerContent = pageName === 'MainPage' ? createMainPageView() : createOurCoffeePageView();
+  const headerContent = (function () {
+    switch (pageName) {
+      case 'MainPage':
+        return createMainPageView();
+      case 'OurCoffeePage':
+      case 'SingleCoffeePage':
+        return createOurCoffeePageView();
+      case 'ForPleasurePage':
+        return createForPleasurePageView();
+      default:
+        return;
+    }
+  })();
 
   return (
     <header className="header" style={headerStyles}>
@@ -56,6 +90,12 @@ const createMainPageView = () => {
 const createOurCoffeePageView = () => {
   return (
     <h1 className="header-title">Our Coffee</h1>
+  );
+}
+
+const createForPleasurePageView = () => {
+  return (
+    <h1 className="header-title">For Your Pleasure</h1>
   );
 }
 

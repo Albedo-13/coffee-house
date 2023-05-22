@@ -6,7 +6,7 @@ const ProductsListItem = (props) => {
   const { id, thumbnail, name, country, price } = props;
   
   return (
-    <Link to={`${id}`} className="products-list-item">
+    <Link to={`../OurCoffee/${id}`} className="products-list-item">
       <div>
         <img className="products-list-item-img"
           src={thumbnail}

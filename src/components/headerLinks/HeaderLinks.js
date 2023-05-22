@@ -17,7 +17,7 @@ const HeaderLinks = () => {
         <Link to='/OurCoffee'>Our coffee</Link>
       </li>
       <li className="menu-list-item">
-        <Link to='/'>For your pleasure</Link>
+        <Link to='/ForPleasure'>For your pleasure</Link>
       </li>
     </ul>
   );
