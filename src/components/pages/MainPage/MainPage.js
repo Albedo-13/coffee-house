@@ -7,8 +7,10 @@ const MainPage = (props) => {
   return (
     <>
       <Header currPage={'MainPage'} />
-      <AboutUs />
-      <OurBest data={props.data} />
+      <main>
+        <AboutUs />
+        <OurBest data={props.data} />
+      </main>
       <Footer style={{paddingTop: '30px'}} />
     </>
   );

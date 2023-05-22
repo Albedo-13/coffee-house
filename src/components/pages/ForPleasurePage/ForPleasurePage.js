@@ -7,8 +7,10 @@ const ForPleasurePage = (props) => {
   return (
     <>
       <Header currPage={'ForPleasurePage'} />
-      <AboutBeans currPage={'ForPleasurePage'} />
-      <ProductsList data={props.data} />
+      <main>
+        <AboutBeans currPage={'ForPleasurePage'} />
+        <ProductsList data={props.data} />
+      </main>
       <Footer />
     </>
   );
