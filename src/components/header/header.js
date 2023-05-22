@@ -13,11 +13,9 @@ const Header = (props) => {
   const headerStyles = pageName === 'MainPage' ? {
     backgroundImage: `url(${MainPageBackground})`,
     backgroundPosition: 'center center',
-    backgroundSize: 'cover',
+    backgroundSize: '101%', // to avoid white stripe bug
     backgroundRepeat: 'no-repeat',
     paddingBottom: '200px',
-    position: 'relative',
-    left: '-2px',
   } : {
     backgroundImage: `url(${OurCoffeePageBackground})`,
     backgroundPosition: 'center',
