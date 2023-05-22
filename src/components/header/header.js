@@ -63,8 +63,7 @@ const createMainPageView = () => {
           alt="coffee beans icon"
           draggable="false" />
       </div>
-      <h3 className="header-subtitle">We makes every day full of energy and taste</h3>
-      <h3 className="header-subtitle">Want to try our beans?</h3>
+      <h2 className="header-subtitle">We makes every day full of energy and taste <br />Want to try our beans?</h2>
       <Link to='/OurCoffee' className="header-btn" aria-label='more products'>Our Coffees</Link>
     </>
   );
