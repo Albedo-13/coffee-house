@@ -11,8 +11,8 @@
   }
 
   &-img {
-    min-width: 272px;
-    max-height: auto;
+    width: 272px;
+    height: auto;
     margin-left: 50px;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
   }
@@ -30,6 +30,13 @@
   &-separator {
     display: inline-block;
     margin-bottom: 21px;
+    width: 60px;
+    height: 37px;
+
+    &-img {
+      width: 30px;
+      height: 30px;
+    }
 
     &::before {
       content: '';

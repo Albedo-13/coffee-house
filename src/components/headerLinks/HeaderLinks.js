@@ -7,7 +7,7 @@ const HeaderLinks = () => {
   return (
     <ul className="menu-list">
       <li className="menu-list-item">
-        <img className="header-beans"
+        <img className="menu-list-beans"
           src={whiteBeans}
           alt="coffee beans icon"
           draggable="false" />

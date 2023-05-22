@@ -13,7 +13,6 @@ const NotFoundPage = lazy(() => import('../pages/NotFoundPage/NotFoundPage'));
 const App = () => {
   const [data] = useState(coffeesList);
 
-  // TODO: third page
   // TODO: make responsive design
   // TODO: finish 404
   // TODO: js => jsx

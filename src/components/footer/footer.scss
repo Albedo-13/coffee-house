@@ -22,6 +22,13 @@
   &-separator {
     display: inline-block;
     margin-top: 29px;
+    width: 60px;
+    height: 37px;
+
+    &-img {
+      width: 30px;
+      height: 30px;
+    }
 
     &::before {
       content: '';
