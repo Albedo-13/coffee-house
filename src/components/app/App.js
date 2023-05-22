@@ -14,10 +14,7 @@ const App = () => {
   const [data] = useState(coffeesList);
 
   // TODO: make responsive design
-  // TODO: finish 404
   // TODO: js => jsx
-  // TODO: dynamic header images imports
-  // TODO: dynamic aboutBeans images imports
   // TODO: clear layout files in root
   // TODO: update readme
 

@@ -4,8 +4,8 @@ import './notFoundPage.scss';
 import sleepingMan from '../../../assets/img/sleep-coffee.webp';
 
 const NotFoundPage = () => {
-  let navigate = useNavigate();
-  // go back button
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="container">
