@@ -1,0 +1,20 @@
+@media (max-width: 840px) {
+  .container {
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-best {
+    &-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-item {
+      margin-bottom: 25px;
+      width: 240px;
+      height: 252px;
+    }
+  }
+}

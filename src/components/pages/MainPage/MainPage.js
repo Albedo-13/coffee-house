@@ -3,6 +3,8 @@ import AboutUs from '../../aboutUs/AboutUs';
 import OurBest from '../../ourBest/OurBest';
 import Footer from '../../footer/Footer';
 
+import '../../../styles/media.scss';
+
 const MainPage = (props) => {
   return (
     <>
