@@ -17,7 +17,7 @@ const Header = (props) => {
         return [{
           backgroundImage: `url(${MainPageBackground})`,
           backgroundPosition: 'center top',
-          backgroundSize: '101% cover', // to avoid white stripe bug
+          backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           paddingBottom: '200px',
         }, createMainPageView()];
