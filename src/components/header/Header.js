@@ -56,7 +56,7 @@ const Header = (props) => {
 const createMainPageView = () => {
   return (
     <>
-      <h1 className="header-title" style={{ marginTop: '111px' }}>Everything You Love About Coffee</h1>
+      <h1 className="header-title">Everything You Love About Coffee</h1>
       <div className="header-separator">
         <img className="header-separator-img"
           src={whiteBeans}
