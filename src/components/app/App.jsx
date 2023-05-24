@@ -13,10 +13,6 @@ const NotFoundPage = lazy(() => import('../pages/NotFoundPage/NotFoundPage'));
 const App = () => {
   const [data] = useState(coffeesList);
 
-  // TODO: title & favicon
-  // TODO: clear layout files in root
-  // TODO: update readme
-
   return (
     <Router>
       <div className="App">
