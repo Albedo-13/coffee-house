@@ -13,9 +13,8 @@ const NotFoundPage = lazy(() => import('../pages/NotFoundPage/NotFoundPage'));
 const App = () => {
   const [data] = useState(coffeesList);
 
-  // TODO: Clamp()
+  // TODO: assets => resources
   // TODO: title & favicon
-  // TODO: make responsive design
   // TODO: js => jsx
   // TODO: clear layout files in root
   // TODO: update readme
