@@ -73,3 +73,25 @@
   outline: 2px solid $coffee;
   color: $coffee;
 }
+
+@media (max-width: $sw768) {
+  .app-filters {
+    padding: 0px 0px 40px 0;
+
+    &-wrapper {
+      flex-direction: column;
+    }
+
+    &-btn-group,
+    &-search {
+      text-align: center;
+    }
+
+    &-btn-group-label,
+    &-searchbar-label {
+      display: block;
+      margin: 0;
+      padding: 5px 0;
+    }
+  }
+}
