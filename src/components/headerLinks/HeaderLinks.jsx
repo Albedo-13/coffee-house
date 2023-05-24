@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import './headerLinks.scss';
-import whiteBeans from '../../assets/icons/beans-transparent-white.svg'
+import whiteBeans from '../../resources/icons/beans-transparent-white.svg'
 
 const HeaderLinks = () => {
   return (

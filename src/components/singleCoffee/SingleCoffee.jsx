@@ -1,5 +1,5 @@
 import './singleCoffee.scss'
-import blackBeans from '../../assets/icons/beans-solid-black.svg';
+import blackBeans from '../../resources/icons/beans-solid-black.svg';
 
 const SingleCoffee = (props) => {
   const { name, country, description, price, thumbnail } = props.product;

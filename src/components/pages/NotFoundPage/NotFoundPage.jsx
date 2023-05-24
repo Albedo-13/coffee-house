@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import './notFoundPage.scss';
 
-import sleepingMan from '../../../assets/img/sleep-coffee.webp';
+import sleepingMan from '../../../resources/img/sleep-coffee.webp';
 
 const NotFoundPage = () => {
   const navigate = useNavigate();

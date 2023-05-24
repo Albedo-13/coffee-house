@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import './aboutBeans.scss';
 
-import womanDrinkCoffee from '../../assets/img/about-img.webp'
-import HotCoffee from '../../assets/img/hot-coffee.webp';
-import blackBeans from '../../assets/icons/beans-solid-black.svg'
+import womanDrinkCoffee from '../../resources/img/about-img.webp'
+import HotCoffee from '../../resources/img/hot-coffee.webp';
+import blackBeans from '../../resources/icons/beans-solid-black.svg'
 
 const AboutBeans = (props) => {
   const [pageName] = useState(props.currPage);

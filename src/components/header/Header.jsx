@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import HeaderLinks from '../headerLinks/HeaderLinks';
 import './header.scss';
 
-import MainPageBackground from '../../assets/img/main-bg.webp';
-import OurCoffeePageBackground from '../../assets/img/our-coffee-bg.webp';
-import ForPleasurePageBackground from '../../assets/img/for-pleasure-bg.webp';
-import whiteBeans from '../../assets/icons/beans-solid-white.svg'
+import MainPageBackground from '../../resources/img/main-bg.webp';
+import OurCoffeePageBackground from '../../resources/img/our-coffee-bg.webp';
+import ForPleasurePageBackground from '../../resources/img/for-pleasure-bg.webp';
+import whiteBeans from '../../resources/icons/beans-solid-white.svg'
 
 const Header = (props) => {
   const [pageName] = useState(props.currPage);

@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 
 import './footer.scss';
-import whiteBeans from '../../assets/icons/beans-transparent-black.svg'
-import blackBeans from '../../assets/icons/beans-solid-black.svg'
+import whiteBeans from '../../resources/icons/beans-transparent-black.svg'
+import blackBeans from '../../resources/icons/beans-solid-black.svg'
 
 const Footer = (props) => {
   return (
