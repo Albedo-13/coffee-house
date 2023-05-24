@@ -15,7 +15,6 @@ const App = () => {
 
   // TODO: assets => resources
   // TODO: title & favicon
-  // TODO: js => jsx
   // TODO: clear layout files in root
   // TODO: update readme
 
