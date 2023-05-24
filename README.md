@@ -12,8 +12,8 @@ A coffee house is an easy-to-use showcase website that provides an opportunity f
 👉 Live Demo: [Live Demo](https://coffee-house-albedo.netlify.app/)
 
 Build with:
-» Scss
-» React JS
+* Scss
+* React JS
 
 ### Screenshots of the Project 📸
 ![image](https://github.com/Albedo-13/coffee-house/assets/42911311/a6d53c46-bd86-4769-9f54-fac3ebeca515)
