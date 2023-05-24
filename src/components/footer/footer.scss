@@ -76,6 +76,20 @@
       }
     }
   }
-  
 }
 
+@media (max-width: $sw576) {
+  .footer-list {
+    flex-direction: column;
+    align-items: center;
+
+    &-item {
+      padding: 12px;
+
+      a {
+        font-size: 16px;
+        text-decoration: underline;
+      }
+    }
+  }
+}

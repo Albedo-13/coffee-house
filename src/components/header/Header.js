@@ -10,7 +10,8 @@ import whiteBeans from '../../assets/icons/beans-solid-white.svg'
 
 const Header = (props) => {
   const [pageName] = useState(props.currPage);
-
+  const paddingBottom = window.innerWidth > 768 ? '200px' : '50px';
+  
   const [headerStyles, headerContent] = (function () {
     switch (pageName) {
       case 'MainPage':
@@ -19,7 +20,7 @@ const Header = (props) => {
           backgroundPosition: 'center top',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
-          paddingBottom: '200px',
+          paddingBottom: paddingBottom,
         }, createMainPageView()];
       case 'OurCoffeePage':
       case 'SingleCoffeePage':
@@ -56,15 +57,17 @@ const Header = (props) => {
 const createMainPageView = () => {
   return (
     <>
-      <h1 className="header-title">Everything You Love About Coffee</h1>
-      <div className="header-separator">
-        <img className="header-separator-img"
-          src={whiteBeans}
-          alt="coffee beans icon"
-          draggable="false" />
+      <div className="container">
+        <h1 className="header-title">Everything You Love About Coffee</h1>
+        <div className="header-separator">
+          <img className="header-separator-img"
+            src={whiteBeans}
+            alt="coffee beans icon"
+            draggable="false" />
+        </div>
+        <h2 className="header-subtitle">We makes every day full of energy and taste <br />Want to try our beans?</h2>
+        <Link to='/OurCoffee' className="header-btn" aria-label='more products'>Our Coffees</Link>
       </div>
-      <h2 className="header-subtitle">We makes every day full of energy and taste <br />Want to try our beans?</h2>
-      <Link to='/OurCoffee' className="header-btn" aria-label='more products'>Our Coffees</Link>
     </>
   );
 }

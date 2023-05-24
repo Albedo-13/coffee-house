@@ -78,3 +78,27 @@
     margin-top: 60px;
   }
 }
+
+@media (max-width: $sw768) {
+  .about-beans {
+    padding-top: 30px;
+
+    &-wrapper {
+      flex-direction: column;
+      align-items: center
+    }
+
+    &-img,
+    &-info {
+      margin: 0;
+    }
+
+    &-hr {
+      margin-top: 10px;
+    }
+
+    &-title {
+      margin-top: 25px;
+    }
+  }
+}

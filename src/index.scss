@@ -1,3 +1,5 @@
+@import 'styles/variables.scss';
+
 body {
   margin: 0;
   font-family: 'Merienda', cursive;
@@ -10,9 +12,8 @@ code {
     monospace;
 }
 
-// @import './styles/media.scss';
-
-// -
-// ::-webkit-scrollbar {
-//   display: none;
-// }
+@media (max-width: $sw840) {
+  .container {
+    padding: 0px 20px;
+  }
+}

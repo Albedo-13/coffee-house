@@ -17,8 +17,8 @@
   }
 
   &-item {
-    width: 172px;
-    height: 180px;
+    min-width: 172px;
+    min-height: 180px;
     padding: 37px 25px 22px 23px;
     border-radius: 8px;
     transition: 0.35s all;
@@ -50,6 +50,36 @@
       margin-top: 8px;
       font-weight: 700;
       font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: $sw768) {  
+  .our-best {
+    padding: 35px 0;
+
+    &-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-item {
+      margin-bottom: 25px;
+      min-width: 240px;
+      min-height: 252px;
+
+      &-img {
+        max-width: 225px;
+        max-height: 100%;
+      }
+
+      &-name {
+        font-size: 16px;
+      }
+
+      &-price {
+        font-size: 18px;
+      }
     }
   }
 }
