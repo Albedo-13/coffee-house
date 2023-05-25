@@ -11,6 +11,9 @@ A coffee house is an easy-to-use showcase website that provides an opportunity f
 
 👉 Live Demo: [Live Demo](https://coffee-house-albedo.netlify.app/)
 
+👉 Figma Layout: [Figma Layout](https://www.figma.com/file/1crxFe0QvvrD9qIy87zOHN/Coffee-shop-(Copy)?type=design&node-id=4-382&t=drE89EYXo68nRC1L-0)
+
+
 Build with:
 * Scss
 * React JS
