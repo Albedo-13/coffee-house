@@ -13,21 +13,8 @@ A coffee house is an easy-to-use showcase website that provides an opportunity f
 
 
 ## Build with ⚙️
-<a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer">
-  <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" width="36" height="36" alt="HTML5" />
-</a>
-<a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer">
-  <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" width="36" height="36" alt="CSS3" />
-</a>
-<a href="https://sass-lang.com/" target="_blank" rel="noreferrer">
-  <img src="https://www.vectorlogo.zone/logos/sass-lang/sass-lang-icon.svg" width="36" height="36" alt="Sass" />
-</a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="JavaScript" />
-</a>
-<a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-  <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" width="36" height="36" alt="React" />
-</a>
+
+[![My Skills](https://skillicons.dev/icons?i=html,css,scss,js,react)](https://skillicons.dev)
 
 ## Screenshots of the Project 📸
 ![image](https://github.com/Albedo-13/coffee-house/assets/42911311/ea70d054-536a-4378-82a8-3bed56c77105)
